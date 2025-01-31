@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Crash</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+</head>
+<body>
+    <div class="start">
+        <div class="title">
+            <span class="name"><span>Color</span> <span>Crash</span></span>
+        </div>
+        <span class="instructions">
+            
+            Click to change color and save the center balls. 
+            
+        </span>
+        <button class="btn start-btn">START</button>
+    </div>
+
+    <span class="retry-msg hide" data-splitting>Game Over!</span>
+    <button class="retry-btn hide" data-splitting>TRY AGAIN</button>
+    <canvas data-canvas></canvas>
+
+
+    <script src="script.js"></script>
+    <script>
+        Splitting();
+    </script>
+</body>
+</html>
